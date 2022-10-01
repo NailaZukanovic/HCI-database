@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Fakultet</string>
+    <string-array name="firelds_array">
+        <item>Matematika</item>
+        <item>Programiranje 1</item>
+        <item>Tehnička fizika</item>
+        <item>Obrada signala</item>
+        <item>Elektrotehnika</item>
+        <item>Matlab</item>
+    </string-array>
+
+    <string-array name="semester_array">
+        <item>Prvi semestar</item>
+        <item>Drugi semestar</item>
+    </string-array>
+</resources>

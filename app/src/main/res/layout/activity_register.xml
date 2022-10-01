@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/usernameReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/usernameReg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/usernameReg"
+        app:layout_constraintTop_toBottomOf="@+id/usernameReg" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <EditText
+        android:id="@+id/firstNameReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First name"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordReg" />
+
+    <EditText
+        android:id="@+id/lastNameReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameReg"
+        app:layout_constraintStart_toStartOf="@+id/firstNameReg"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameReg" />
+
+    <Spinner
+        android:id="@+id/fieldReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameReg" />
+
+    <Spinner
+        android:id="@+id/semesterReg"
+        android:layout_width="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/fieldReg"
+        app:layout_constraintStart_toStartOf="@+id/fieldReg"
+        app:layout_constraintTop_toBottomOf="@+id/fieldReg" />
+
+    <Button
+        android:id="@+id/registerBtnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/red"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/semesterReg"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/semesterReg"
+        app:layout_constraintTop_toBottomOf="@+id/semesterReg" />
+
+    <TextView
+        android:id="@+id/regErr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/registerBtnReg"
+        app:layout_constraintStart_toStartOf="@+id/registerBtnReg"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtnReg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
